@@ -1,0 +1,79 @@
+Source: polo
+Section: x11
+Priority: optional
+Maintainer: Menta Linux <packages@menta-linux.invalid>
+Build-Depends: debhelper-compat (= 13),
+               desktop-file-utils,
+               g++,
+               gcc,
+               git,
+               libcairo2-dev,
+               libcanberra-dev,
+               libdconf-dev,
+               libdisplay-info-dev,
+               libdrm-dev,
+               libegl-dev,
+               libevdev-dev,
+               libgbm-dev,
+               libgles-dev,
+               libglib2.0-dev (>= 2.80),
+               libgtk-3-dev,
+               libgtk-layer-shell-dev,
+               libice-dev,
+               libinput-dev,
+               libjson-glib-dev,
+               liblcms2-dev,
+               libmate-desktop-dev (>= 1.29.1),
+               libpango1.0-dev,
+               libpixman-1-dev,
+               libpng-dev,
+               libpulse-dev,
+               libseat-dev,
+               libsm-dev,
+               libsystemd-dev,
+               libudev-dev,
+               libwayland-dev,
+               libxcb-composite0-dev,
+               libxcb-cursor-dev,
+               libxcb-errors-dev,
+               libxcb-ewmh-dev,
+               libxcb-icccm4-dev,
+               libxcb-xkb-dev,
+               libxcb1-dev,
+               libxcursor-dev,
+               libxkbcommon-dev,
+               libxkbregistry-dev,
+               meson (>= 1.4.0),
+               ninja-build,
+               pkgconf,
+               python3,
+               python3-xlib,
+               python3-yaml,
+               systemd-dev,
+               valac (>= 0.56),
+               valadoc,
+               wayland-protocols,
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Homepage: https://github.com/KeremSoke/polo
+
+Package: polo
+Architecture: any
+Depends: dconf-cli,
+         xdg-desktop-portal-gtk,
+         xdg-desktop-portal-wlr,
+         xwayland,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: caja,
+            grim,
+            mate-panel (>= 1.28),
+            mate-screensaver,
+            mate-settings-daemon,
+            slurp,
+            wl-clipboard,
+Description: Wayland compositor and session for the MATE desktop
+ Polo is a Wayland compositor and window manager for MATE, built on a
+ private, patched copy of the Weston compositor library. It reads Marco's
+ settings, manages X11 programs through its own XWayland window manager, and
+ provides the "MATE (Polo)" session.

@@ -1,0 +1,26 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: polo
+Upstream-Contact: Kerem Söke
+Source: https://github.com/KeremSoke/polo
+
+Files: *
+Copyright: 2026 Kerem Söke
+License: GPL-3+
+
+Files: subprojects/weston/*
+Copyright: Weston authors
+License: MIT
+Comment: Vendored Weston 16.0.1 with Polo's patches (subprojects/packagefiles).
+ Other files in the tree carry GPL-2+, LGPL-2+ or LGPL-2.1+ headers; see LICENSES/.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation, either version 3 of the License, or (at your option) any later
+ version.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 3 can be found in /usr/share/common-licenses/GPL-3.
+
+License: MIT
+ The full text is in LICENSES/MIT.txt of the source tree.

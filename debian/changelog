@@ -1,0 +1,7 @@
+polo (1.0.1+git20261113.1154525-1menta1) unstable; urgency=medium
+
+  * Menta Linux build of polo at upstream commit 1154525 (Input: Offer
+    the input devices over D-Bus); orig tarball includes the patched
+    Weston subproject.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sat, 14 Nov 2026 18:06:15 -0700
