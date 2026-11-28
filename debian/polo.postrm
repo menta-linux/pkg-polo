@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+    configure|remove|purge)
+        dconf update >/dev/null 2>&1 || true
+        ;;
+esac
+
+exit 0

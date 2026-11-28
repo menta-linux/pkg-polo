@@ -1,0 +1,6 @@
+# Menta Linux: the Polo (Wayland) session needs the panel's StatusNotifierItem support, which is what shows
+# tray/status icons there. Debian's mate-desktop-environment-core ships a gsettings override that sets
+# enable-sni-support=false for the X11 session; a dconf system-db value takes precedence over that override,
+# and this database is only used by the Polo session.
+[org/mate/panel]
+enable-sni-support=true

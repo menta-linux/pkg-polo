@@ -1,0 +1,43 @@
+polo (1.0.1+git20261123.b9514ed-1menta2) unstable; urgency=medium
+
+  * Polo session: set org.mate.panel enable-sni-support=true in the polo
+    dconf database (Debian's mate-desktop-environment-core ships an
+    override that sets it to false, which hides status/tray icons on
+    Wayland).
+
+ -- Menta Linux <packages@menta-linux.invalid>  Mon, 23 Nov 2026 13:38:34 -0700
+
+polo (1.0.1+git20261123.b9514ed-1menta1) unstable; urgency=medium
+
+  * Menta Linux build of upstream main at commit b9514ed (2026-11-23, 6
+    commits after a0f0360): fractional-scale support, DPI-aware title
+    bars, maximized/fullscreen size-mismatch tolerance.
+  * Drop 0001-shell-ui-link-libm.patch: upstream now links libm to every
+    target (3ba99dc).
+
+ -- Menta Linux <packages@menta-linux.invalid>  Mon, 23 Nov 2026 09:11:21 -0700
+
+polo (1.0.1+git20261121.a0f0360-1menta1) unstable; urgency=medium
+
+  * Menta Linux build of upstream main at commit a0f0360 (2026-11-21, 65
+    commits after 1154525); orig tarball includes the patched Weston
+    subproject.
+  * debian/control: Recommend mate-utils (mate-screenshot, now used for
+    the screenshot keys, with Wayland window/area capture) instead of
+    grim, slurp and wl-clipboard.
+  * CI: build for unstable and trixie.
+  * debian/control: Build-Depend on wayland-protocols (>= 1.46) (trixie-
+    backports), libxcb-randr0-dev and dconf-cli (compiles the dconf
+    profile database).
+  * debian/patches/0001-shell-ui-link-libm.patch: link polo-shell-ui
+    against libm (link failure on trixie).
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sun, 22 Nov 2026 20:56:26 -0700
+
+polo (1.0.1+git20261113.1154525-1menta1) unstable; urgency=medium
+
+  * Menta Linux build of polo at upstream commit 1154525 (Input: Offer
+    the input devices over D-Bus); orig tarball includes the patched
+    Weston subproject.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sat, 14 Nov 2026 18:06:15 -0700
