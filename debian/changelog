@@ -1,12 +1,3 @@
-polo (1.1.0-1menta1) unstable; urgency=medium
-
-  * New upstream release 1.1.0, taken from the release asset (which, unlike
-    the tag archive, contains the patched Weston subproject). Menta now
-    follows Polo's releases instead of snapshots of upstream main.
-  * debian/watch: track GitHub releases.
-
- -- Menta Linux <packages@menta-linux.invalid>  Fri, 27 Nov 2026 21:15:00 -0700
-
 polo (1.0.1+git20261123.b9514ed-1menta2) unstable; urgency=medium
 
   * Polo session: set org.mate.panel enable-sni-support=true in the polo
